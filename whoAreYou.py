@@ -6,7 +6,7 @@ from dns import resolver, reversename
 
 # _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 def getAddressList():
-    x = input("Enter address range: \n> ")
+    x = input("Enter address range (ex. 192.168.0.0/24): \n> ")
     f = open("iplist.txt", "w+")
 
     for ip in ipaddress.IPv4Network(x):
